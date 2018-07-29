@@ -45,4 +45,3 @@ for number in 1 ... max
 {
     print(number)
 }
-
