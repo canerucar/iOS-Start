@@ -27,8 +27,8 @@ if myName == "James"
 // == eşittir
 // < küçüktür
 // > büyüktür
-// =< küçük eşit
-// => büyük eşit
+// <= küçük eşit
+// >= büyük eşit
 // != eşit değil
 // || veya
 // && ve
