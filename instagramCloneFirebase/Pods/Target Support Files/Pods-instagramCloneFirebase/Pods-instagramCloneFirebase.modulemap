@@ -1,0 +1,6 @@
+framework module Pods_instagramCloneFirebase {
+  umbrella header "Pods-instagramCloneFirebase-umbrella.h"
+
+  export *
+  module * { export * }
+}
