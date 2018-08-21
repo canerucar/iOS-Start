@@ -4,6 +4,6 @@
 
 ### Kaynak
 
-https://www.udemy.com/ios-11-swift-4-baslangictan-ileri-seviyeye-mobil-uygulama/
-https://docs.swift.org/swift-book/GuidedTour/Compatibility.html
-https://www.mobilhanem.com/swift-egitimi/
+* https://www.udemy.com/ios-11-swift-4-baslangictan-ileri-seviyeye-mobil-uygulama/)
+* https://docs.swift.org/swift-book/GuidedTour/Compatibility.html
+* https://www.mobilhanem.com/swift-egitimi/
