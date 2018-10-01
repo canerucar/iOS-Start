@@ -10,16 +10,34 @@ import UIKit
 import WebKit
 class ViewController: UIViewController, WKUIDelegate {
     
+    
     @IBOutlet weak var webViewOutlet: WKWebView!
     var webView: WKWebView!
     
+        //var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       /* let myURL = URL(string: "https://diziay.com")
+        //Create Activity Indicator
+        //activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
+        
+        // Position Activity Indicator in the center of the main view
+        //activityIndicator.center = view.center
+        
+        // If needed, you can prevent Acivity Indicator from hiding when stopAnimating() is called
+        //activityIndicator.hidesWhenStopped = false
+        
+        // Start Activity Indicator
+        //activityIndicator.startAnimating()
+        
+        // Call stopAnimating() when need to stop activity indicator
+        //activityIndicator.stopAnimating()
+        
+       /* let myURL = URL(string: "https://www.haberstk.com")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest) */
+        
         
         let webConfiguration = WKWebViewConfiguration()
         let customFrame = CGRect.init(origin: CGPoint.zero, size: CGSize.init(width: 0.0, height: self.webViewOutlet.frame.size.height))
@@ -36,5 +54,6 @@ class ViewController: UIViewController, WKUIDelegate {
         let myURL = URL(string: "https://www.haberstk.com")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
+        
     }}
 
