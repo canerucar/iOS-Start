@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIButtonAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGa-NH-5Q0">
+                                <rect key="frame" x="126" y="239" width="123" height="37"/>
+                                <color key="backgroundColor" red="0.17715459250926943" green="0.6328149315379249" blue="0.96294019670050757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="4ak-J2-kNg"/>
+                                </constraints>
+                                <state key="normal" title="Pulse">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pulseClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aL7-pa-eL3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gy4-I5-zVv">
+                                <rect key="frame" x="126" y="315" width="123" height="37"/>
+                                <color key="backgroundColor" red="0.96294019670050757" green="0.40618972408166149" blue="0.22835565535785199" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Flash">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goS-OF-8Mk">
+                                <rect key="frame" x="126" y="391" width="123" height="37"/>
+                                <color key="backgroundColor" red="0.67249236658840494" green="0.30776721215365405" blue="0.96294019670050757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Shake">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shakeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Plq-hO-tV4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jb-l1-5Hv">
+                                <rect key="frame" x="126" y="315" width="123" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.96294019669999997" green="0.40618972409999998" blue="0.2283556554" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Flash">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="flashClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7uV-on-H6V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pGa-NH-5Q0" firstAttribute="trailing" secondItem="gy4-I5-zVv" secondAttribute="trailing" id="3SV-H3-C9n"/>
+                            <constraint firstItem="gy4-I5-zVv" firstAttribute="trailing" secondItem="goS-OF-8Mk" secondAttribute="trailing" id="4Mh-As-aly"/>
+                            <constraint firstItem="pGa-NH-5Q0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="219" id="6EA-4R-EWK"/>
+                            <constraint firstItem="gy4-I5-zVv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="E31-7z-2Ep"/>
+                            <constraint firstItem="pGa-NH-5Q0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pft-K6-pik"/>
+                            <constraint firstItem="gy4-I5-zVv" firstAttribute="top" secondItem="pGa-NH-5Q0" secondAttribute="bottom" constant="39" id="RUD-P0-4LG"/>
+                            <constraint firstItem="gy4-I5-zVv" firstAttribute="leading" secondItem="goS-OF-8Mk" secondAttribute="leading" id="UuB-0L-kCy"/>
+                            <constraint firstItem="pGa-NH-5Q0" firstAttribute="leading" secondItem="gy4-I5-zVv" secondAttribute="leading" id="lhH-8w-tSE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="goS-OF-8Mk" secondAttribute="bottom" constant="239" id="tzu-xM-nif"/>
+                            <constraint firstItem="goS-OF-8Mk" firstAttribute="top" secondItem="gy4-I5-zVv" secondAttribute="bottom" constant="39" id="uGo-PT-dyF"/>
+                            <constraint firstItem="pGa-NH-5Q0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="wFX-rH-Sb3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
