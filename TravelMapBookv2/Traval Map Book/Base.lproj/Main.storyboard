@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GqF-32-w8k">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MapVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="mapVC" customModule="Travel_Map_Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="klQ-TN-MyQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Açıklama Giriniz" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BJi-Wo-1MQ">
+                                <rect key="frame" x="8" y="128" width="264" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Yer Adı Giriniz " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XdS-Vh-ZrK">
+                                <rect key="frame" x="8" y="73" width="264" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvE-96-r42">
+                                <rect key="frame" x="280" y="78" width="95" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Kaydet"/>
+                                <connections>
+                                    <action selector="saveBotton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gtr-eO-YQZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="klQ-TN-MyQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1e0-IP-voq"/>
+                            <constraint firstItem="klQ-TN-MyQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="S1p-vg-beG"/>
+                            <constraint firstItem="klQ-TN-MyQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yro-UP-NEh"/>
+                            <constraint firstItem="klQ-TN-MyQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zUD-fe-4x1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="AciklamaText" destination="BJi-Wo-1MQ" id="FLE-oG-o7O"/>
+                        <outlet property="baslikText" destination="BJi-Wo-1MQ" id="nbE-XD-A3i"/>
+                        <outlet property="mapView" destination="klQ-TN-MyQ" id="h25-Ad-MZz"/>
+                        <outlet property="yer" destination="XdS-Vh-ZrK" id="0Pk-hq-PXA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="121.88905547226388"/>
+        </scene>
+        <!--Travel Map Book-->
+        <scene sceneID="IMX-ql-nYM">
+            <objects>
+                <viewController id="x6p-L7-VjZ" customClass="tableVC" customModule="Travel_Map_Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ifY-gS-ps3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p2G-Hu-7ZG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="p2G-Hu-7ZG" firstAttribute="leading" secondItem="ifY-gS-ps3" secondAttribute="leading" id="TmX-Oc-bmV"/>
+                            <constraint firstAttribute="trailing" secondItem="p2G-Hu-7ZG" secondAttribute="trailing" id="Vah-Dj-f4g"/>
+                            <constraint firstItem="p2G-Hu-7ZG" firstAttribute="bottom" secondItem="Vdb-3E-0dD" secondAttribute="bottom" id="f2D-iZ-ALg"/>
+                            <constraint firstItem="p2G-Hu-7ZG" firstAttribute="top" secondItem="Vdb-3E-0dD" secondAttribute="top" id="gKO-xG-8Sn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vdb-3E-0dD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Travel Map Book" id="O8Z-oe-GDM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Jrc-53-ORg">
+                            <connections>
+                                <action selector="addMap:" destination="x6p-L7-VjZ" id="eC5-FB-BDj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="p2G-Hu-7ZG" id="AVl-kL-Kwf"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="tomapVC" id="DeB-sd-rIc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfU-vq-Byt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="122"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n7a-sm-fyt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GqF-32-w8k" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HiB-Jc-EyH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x6p-L7-VjZ" kind="relationship" relationship="rootViewController" id="tRT-3H-r5Q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZlK-yd-b8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-567.20000000000005" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>
