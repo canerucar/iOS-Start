@@ -8,36 +8,25 @@
 
 import UIKit
 import WebKit
-class ViewController: UIViewController, WKUIDelegate {
+import SVProgressHUD
+
+class ViewController: UIViewController, WKUIDelegate, UIWebViewDelegate,WKNavigationDelegate {
     
     
     @IBOutlet weak var webViewOutlet: WKWebView!
     var webView: WKWebView!
     
-        //var activityIndicator:UIActivityIndicatorView = UIActivityIndicatorView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Create Activity Indicator
-        //activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.gray)
-        
-        // Position Activity Indicator in the center of the main view
-        //activityIndicator.center = view.center
-        
-        // If needed, you can prevent Acivity Indicator from hiding when stopAnimating() is called
-        //activityIndicator.hidesWhenStopped = false
-        
-        // Start Activity Indicator
-        //activityIndicator.startAnimating()
-        
-        // Call stopAnimating() when need to stop activity indicator
-        //activityIndicator.stopAnimating()
         
        /* let myURL = URL(string: "https://www.haberstk.com")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest) */
         
+     
+        //Web verisini çekmek
         
         let webConfiguration = WKWebViewConfiguration()
         let customFrame = CGRect.init(origin: CGPoint.zero, size: CGSize.init(width: 0.0, height: self.webViewOutlet.frame.size.height))
@@ -51,9 +40,100 @@ class ViewController: UIViewController, WKUIDelegate {
         webView.heightAnchor.constraint(equalTo: webViewOutlet.heightAnchor).isActive = true
         webView.uiDelegate = self
         
+        
         let myURL = URL(string: "https://www.haberstk.com")
         let myRequest = URLRequest(url: myURL!)
+        webView.allowsBackForwardNavigationGestures = true
         webView.load(myRequest)
         
-    }}
+        
+        //YÜKLENİYOR LOGOSU ALERT
+        
+        SVProgressHUD.setDefaultStyle(.custom)
+        //SVProgressHUD.setForegroundColor(UIColor.red)           //Ring Color
+        //SVProgressHUD.setBackgroundLayerColor(UIColor.green)
+        
+        
+        SVProgressHUD.setMinimumSize(CGSize(width: 80, height: 80))
+        SVProgressHUD.setRingThickness(3)
+        SVProgressHUD.setRingNoTextRadius(20)
+        SVProgressHUD.setBackgroundColor(UIColor.gray)
+        SVProgressHUD.setForegroundColor(UIColor.white)
+        SVProgressHUD.show()
+        SVProgressHUD.show(withStatus: "Yükleniyor...")
+        
+        //Yükleniyor logosu ekranda kalma süresi
+        DispatchQueue.main.async
+        {
+            Timer.scheduledTimer(timeInterval: 6, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+        }
+        
+    }
+    
+    //Yükleniyor logosu durdurma- başarısız
+    func webViewDidFinishLoad(_ webView: UIWebView)
+    {
+        webViewOutlet.reload()
+        SVProgressHUD.dismiss()
+    }
+    
+    @objc func update()
+    {
+        webView.reload()
+        SVProgressHUD.dismiss()
+        
+    }
+    
+    //internet olmadığında ekrana çıkacak olan uyarı
+    override func viewDidAppear(_ animated: Bool)
+    {
+        if CheckInternet.Connection()
+        {
+            
+        }
+        else
+        {
+            SVProgressHUD.dismiss()
+            self.Alert(Message: "Lütfen İnternete Bağlanın")
+        }
+    }
+    
+    func Alert (Message: String){
+        
+       /* let alert = UIAlertController(title: "UYARI", message: Message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Tamam", style: UIAlertAction.Style.cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        */
+        
+        
+        //internet olmadığında ekrana çıkacak olan uyarı ALERT
+        let alertController = UIAlertController (title: "İnternete Bağlı Değilsiniz", message: "Ayarlara Git", preferredStyle: .alert)
+        
+        let settingsAction = UIAlertAction(title: "Ayarlar", style: .default) { (_) -> Void in
+            guard let settingsUrl = URL(string: "App-Prefs:root=WIFI") else {
+                return
+            }
+            
+            if UIApplication.shared.canOpenURL(settingsUrl) {
+                UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
+                    print("Settings opened: \(success)") // Prints true
+                })
+            }
+        }
+        alertController.addAction(settingsAction)
+        //let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        //alertController.addAction(cancelAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
+        
+    }
+    
+   
+    
+}
+
+
+
+
 

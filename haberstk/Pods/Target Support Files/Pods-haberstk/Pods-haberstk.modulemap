@@ -1,0 +1,6 @@
+framework module Pods_haberstk {
+  umbrella header "Pods-haberstk-umbrella.h"
+
+  export *
+  module * { export * }
+}

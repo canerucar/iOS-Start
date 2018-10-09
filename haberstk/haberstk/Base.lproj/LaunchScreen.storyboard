@@ -14,20 +14,22 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController storyboardIdentifier="splashController" id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleAspectFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="sWJ-Qh-ByE">
-                                <rect key="frame" x="-4" y="306" width="379" height="201"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="sWJ-Qh-ByE">
+                                <rect key="frame" x="0.0" y="311" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Vd2-2i-xKS"/>
+                                    <constraint firstAttribute="width" constant="375" id="tlZ-6V-U0X"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sWJ-Qh-ByE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="262" id="Ic7-Ix-e0K"/>
-                            <constraint firstItem="sWJ-Qh-ByE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="Pnh-Yg-dyw"/>
-                            <constraint firstAttribute="trailing" secondItem="sWJ-Qh-ByE" secondAttribute="trailing" id="Vkb-P9-Na5"/>
-                            <constraint firstItem="sWJ-Qh-ByE" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="eZY-R2-jmS"/>
+                            <constraint firstItem="sWJ-Qh-ByE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qvo-7u-Tng"/>
+                            <constraint firstItem="sWJ-Qh-ByE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="wxK-qn-yZd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

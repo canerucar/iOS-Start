@@ -7,17 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0ED5982164D445003C4285 /* CheckInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0ED5972164D445003C4285 /* CheckInternet.swift */; };
+		9C1255AF2165342900D303A4 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1255AD2165342900D303A4 /* Crashlytics.framework */; };
+		9C1255B02165342900D303A4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1255AE2165342900D303A4 /* Fabric.framework */; };
 		9C281AD521623F0600A6C143 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C281AD421623F0600A6C143 /* logo.png */; };
+		9C4D39E121638A8000E1C7A9 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C4D39E021638A8000E1C7A9 /* PushKit.framework */; };
 		9C9E943B21456E8200A001E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E943A21456E8200A001E3 /* AppDelegate.swift */; };
 		9C9E943D21456E8200A001E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9E943C21456E8200A001E3 /* ViewController.swift */; };
 		9C9E944021456E8200A001E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9E943E21456E8200A001E3 /* Main.storyboard */; };
 		9C9E944221456E8300A001E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C9E944121456E8300A001E3 /* Assets.xcassets */; };
 		9C9E944521456E8300A001E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9E944321456E8300A001E3 /* LaunchScreen.storyboard */; };
 		9C9E944E2145711700A001E3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9E944D2145711700A001E3 /* WebKit.framework */; };
+		DB467B05542D590B5E737AA5 /* Pods_haberstk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7497EFB342E8FD62E0779EA /* Pods_haberstk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E6F6B011FB0F1C7EAF9E4D5 /* Pods-haberstk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haberstk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-haberstk/Pods-haberstk.debug.xcconfig"; sourceTree = "<group>"; };
+		9C0ED5972164D445003C4285 /* CheckInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternet.swift; sourceTree = "<group>"; };
+		9C1255AD2165342900D303A4 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		9C1255AE2165342900D303A4 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		9C281AD421623F0600A6C143 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		9C4D39DF21638A4A00E1C7A9 /* haberstk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = haberstk.entitlements; sourceTree = "<group>"; };
+		9C4D39E021638A8000E1C7A9 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
 		9C9E943721456E8100A001E3 /* haberstk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haberstk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C9E943A21456E8200A001E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C9E943C21456E8200A001E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +37,8 @@
 		9C9E944421456E8300A001E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C9E944621456E8300A001E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C9E944D2145711700A001E3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B392FF89D53EE4B031ABB0EB /* Pods-haberstk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haberstk.release.xcconfig"; path = "Pods/Target Support Files/Pods-haberstk/Pods-haberstk.release.xcconfig"; sourceTree = "<group>"; };
+		E7497EFB342E8FD62E0779EA /* Pods_haberstk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_haberstk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +46,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C4D39E121638A8000E1C7A9 /* PushKit.framework in Frameworks */,
+				9C1255B02165342900D303A4 /* Fabric.framework in Frameworks */,
 				9C9E944E2145711700A001E3 /* WebKit.framework in Frameworks */,
+				9C1255AF2165342900D303A4 /* Crashlytics.framework in Frameworks */,
+				DB467B05542D590B5E737AA5 /* Pods_haberstk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +68,12 @@
 		9C9E942E21456E8100A001E3 = {
 			isa = PBXGroup;
 			children = (
+				9C1255AD2165342900D303A4 /* Crashlytics.framework */,
+				9C1255AE2165342900D303A4 /* Fabric.framework */,
 				9C9E943921456E8100A001E3 /* haberstk */,
 				9C9E943821456E8100A001E3 /* Products */,
 				9C9E944C2145711700A001E3 /* Frameworks */,
+				F5A69268D2E02702146F01DF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,8 +88,10 @@
 		9C9E943921456E8100A001E3 /* haberstk */ = {
 			isa = PBXGroup;
 			children = (
+				9C4D39DF21638A4A00E1C7A9 /* haberstk.entitlements */,
 				9C281AD321623EEF00A6C143 /* images */,
 				9C9E943A21456E8200A001E3 /* AppDelegate.swift */,
+				9C0ED5972164D445003C4285 /* CheckInternet.swift */,
 				9C9E943C21456E8200A001E3 /* ViewController.swift */,
 				9C9E943E21456E8200A001E3 /* Main.storyboard */,
 				9C9E944121456E8300A001E3 /* Assets.xcassets */,
@@ -82,9 +104,20 @@
 		9C9E944C2145711700A001E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9C4D39E021638A8000E1C7A9 /* PushKit.framework */,
 				9C9E944D2145711700A001E3 /* WebKit.framework */,
+				E7497EFB342E8FD62E0779EA /* Pods_haberstk.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5A69268D2E02702146F01DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E6F6B011FB0F1C7EAF9E4D5 /* Pods-haberstk.debug.xcconfig */,
+				B392FF89D53EE4B031ABB0EB /* Pods-haberstk.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C9E944921456E8300A001E3 /* Build configuration list for PBXNativeTarget "haberstk" */;
 			buildPhases = (
+				E2698B8D7752E102A4FCE4B9 /* [CP] Check Pods Manifest.lock */,
 				9C9E943321456E8100A001E3 /* Sources */,
 				9C9E943421456E8100A001E3 /* Frameworks */,
 				9C9E943521456E8100A001E3 /* Resources */,
+				553EFE67EE9F25512AEC7A0B /* [CP] Embed Pods Frameworks */,
+				9C0ED59921652BB4003C4285 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -119,6 +155,15 @@
 				TargetAttributes = {
 					9C9E943621456E8100A001E3 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -154,12 +199,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		553EFE67EE9F25512AEC7A0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-haberstk/Pods-haberstk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-haberstk/Pods-haberstk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C0ED59921652BB4003C4285 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 0e089853d5fdf31cecb775eba4dcdac16c8a792d f9d3d4ba98664012c34c075250182061ea5f4057323f24f74ed743fc8e2ec8a2\n";
+		};
+		E2698B8D7752E102A4FCE4B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-haberstk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C9E943321456E8100A001E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9C9E943D21456E8200A001E3 /* ViewController.swift in Sources */,
+				9C0ED5982164D445003C4285 /* CheckInternet.swift in Sources */,
 				9C9E943B21456E8200A001E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,38 +404,54 @@
 		};
 		9C9E944A21456E8300A001E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E6F6B011FB0F1C7EAF9E4D5 /* Pods-haberstk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = haberstk/haberstk.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DNQRAL589Q;
+				DEVELOPMENT_TEAM = ZG3QLQT98D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = haberstk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.canerucar.haberstk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.canerucar.haberstkv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9C9E944B21456E8300A001E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B392FF89D53EE4B031ABB0EB /* Pods-haberstk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = haberstk/haberstk.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DNQRAL589Q;
+				DEVELOPMENT_TEAM = ZG3QLQT98D;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = haberstk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.canerucar.haberstk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.canerucar.haberstkv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
