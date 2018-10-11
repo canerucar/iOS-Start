@@ -1,0 +1,6 @@
+framework module Pods_Aktuel {
+  umbrella header "Pods-Aktuel-umbrella.h"
+
+  export *
+  module * { export * }
+}
