@@ -9,12 +9,20 @@
 import UIKit
 import GoogleMobileAds
 
+
+let mTuple = [("a101","A-101","25"), ("bim","BİM","20"), ("migros","MİGROS","24"), ("hakmar","HAKMAR","28")];
+
+var myIndex = 0
+
+
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
    
     @IBOutlet weak var tableViewMain: UITableView!
     @IBOutlet weak var admobView: GADBannerView! //UIView yerine yazdık
     
-    let mTuple = [("a101","A-101","25"), ("bim","BİM","20"), ("migros","MİGROS","24")];
+    //let mTuple = [("a101","A-101","25"), ("bim","BİM","20"), ("migros","MİGROS","24"), ("hakmar","HAKMAR","28")];
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +55,23 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         cell.marketlerImage.image = UIImage(named: mTuple[indexPath.row].0)
         cell.marketlerName.text = mTuple[indexPath.row].1
         cell.brosurDate.text = "\(mTuple[indexPath.row].2)"
+        
+        
+        //seçilen cell'in arkaplan rengi /sonradan değişecektir
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor.gray
+        cell.selectedBackgroundView = bgColorView
+        
+        
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "detailsSegue", sender: self)
+        
+        
     }
     
    

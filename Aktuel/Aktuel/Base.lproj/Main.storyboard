@@ -29,32 +29,38 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BqN-6J-1E3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="134"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BqN-6J-1E3">
+                                                    <rect key="frame" x="26" y="0.0" width="134" height="134"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="134" id="t99-Ei-uZw"/>
+                                                        <constraint firstAttribute="width" constant="134" id="gve-Fi-jLI"/>
+                                                        <constraint firstAttribute="height" constant="134" id="z8V-jF-6eR"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marketler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKG-lq-ShG">
+                                                    <rect key="frame" x="199" y="11" width="140" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="j9v-bc-iRd"/>
+                                                        <constraint firstAttribute="width" constant="140" id="wIc-76-r0G"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tarih" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbv-4k-XNT">
-                                                    <rect key="frame" x="273" y="91" width="95" height="26"/>
+                                                    <rect key="frame" x="222" y="97" width="95" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Marketler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKG-lq-ShG">
-                                                    <rect key="frame" x="117" y="48" width="140" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="BqN-6J-1E3" firstAttribute="top" secondItem="dUQ-Fh-my1" secondAttribute="top" id="Gdg-Rw-2A5"/>
-                                                <constraint firstAttribute="bottom" secondItem="BqN-6J-1E3" secondAttribute="bottom" constant="-0.5" id="jhx-In-wZ6"/>
-                                                <constraint firstAttribute="trailing" secondItem="BqN-6J-1E3" secondAttribute="trailing" id="uSx-Og-kex"/>
-                                                <constraint firstItem="BqN-6J-1E3" firstAttribute="leading" secondItem="dUQ-Fh-my1" secondAttribute="leading" id="zoq-TC-7sb"/>
+                                                <constraint firstItem="BqN-6J-1E3" firstAttribute="top" secondItem="dUQ-Fh-my1" secondAttribute="top" id="6Ok-9O-Wvy"/>
+                                                <constraint firstItem="wKG-lq-ShG" firstAttribute="top" secondItem="dUQ-Fh-my1" secondAttribute="topMargin" id="W6v-gV-bhd"/>
+                                                <constraint firstItem="wKG-lq-ShG" firstAttribute="leading" secondItem="BqN-6J-1E3" secondAttribute="trailing" constant="39" id="a3Z-dV-5id"/>
+                                                <constraint firstItem="BqN-6J-1E3" firstAttribute="leading" secondItem="dUQ-Fh-my1" secondAttribute="leading" constant="26" id="qlO-0h-UZr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wKG-lq-ShG" secondAttribute="trailing" constant="21" id="vEX-fm-jrs"/>
+                                                <constraint firstAttribute="bottom" secondItem="BqN-6J-1E3" secondAttribute="bottom" constant="-0.5" id="xwz-Vx-eMJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -93,11 +99,44 @@
                     <connections>
                         <outlet property="admobView" destination="4FO-qc-2cO" id="zTC-Do-Dmw"/>
                         <outlet property="tableViewMain" destination="hSf-IV-rTy" id="Leo-W3-ZQy"/>
+                        <segue destination="rA6-6a-3x4" kind="show" identifier="detailsSegue" id="Vpp-Yp-ANU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1210" y="134"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="XC0-Ou-qPm">
+            <objects>
+                <viewController id="rA6-6a-3x4" customClass="detailsViewController" customModule="Aktuel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OdY-sa-LGS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hangi Market" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1E-wS-bea">
+                                <rect key="frame" x="103" y="299" width="169" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j1E-wS-bea" firstAttribute="centerX" secondItem="OdY-sa-LGS" secondAttribute="centerX" id="0K4-TU-7Ij"/>
+                            <constraint firstItem="j1E-wS-bea" firstAttribute="centerY" secondItem="OdY-sa-LGS" secondAttribute="centerY" id="BSv-tS-9YN"/>
+                            <constraint firstItem="j1E-wS-bea" firstAttribute="top" secondItem="IUf-Vk-E5f" secondAttribute="top" constant="235" id="S9Y-4A-tR3"/>
+                            <constraint firstItem="j1E-wS-bea" firstAttribute="leading" secondItem="IUf-Vk-E5f" secondAttribute="leading" constant="103" id="gLw-mZ-TJU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IUf-Vk-E5f"/>
+                    </view>
+                    <connections>
+                        <outlet property="marketAdlari" destination="j1E-wS-bea" id="Kwb-UB-FjX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ara-Is-iT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="133.5832083958021"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v1z-EU-M3H">
