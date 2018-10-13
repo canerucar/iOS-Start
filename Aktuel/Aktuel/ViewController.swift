@@ -59,7 +59,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         
         //seçilen cell'in arkaplan rengi /sonradan değişecektir
         let bgColorView = UIView()
-        bgColorView.backgroundColor = UIColor.gray
+        bgColorView.backgroundColor = UIColor.white
         cell.selectedBackgroundView = bgColorView
         
         

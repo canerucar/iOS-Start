@@ -84,6 +84,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="hSf-IV-rTy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Are-9p-cuz"/>
                             <constraint firstItem="4FO-qc-2cO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ed0-rT-loN"/>
@@ -94,6 +95,9 @@
                             <constraint firstItem="4FO-qc-2cO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="skj-gT-WkD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="I69-Ev-taN" appends="YES" id="QSQ-Lb-rip"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Marketler" id="Fbl-Nq-EXj"/>
                     <connections>
@@ -103,6 +107,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="I69-Ev-taN">
+                    <connections>
+                        <segue destination="rA6-6a-3x4" kind="show" id="nfy-27-pIv"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1210" y="134"/>
         </scene>
@@ -158,4 +167,7 @@
             <point key="canvasLocation" x="268" y="134"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nfy-27-pIv"/>
+    </inferredMetricsTieBreakers>
 </document>
