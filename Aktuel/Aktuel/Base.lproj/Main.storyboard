@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-IV-rTy">
-                                <rect key="frame" x="0.0" y="64" width="375" height="545"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="493"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="134" id="eMV-Y3-mxK" customClass="mainCell" customModule="Aktuel" customModuleProvider="target">
@@ -115,7 +115,7 @@
             </objects>
             <point key="canvasLocation" x="1210" y="134"/>
         </scene>
-        <!--Details View Controller-->
+        <!--Market Adları-->
         <scene sceneID="XC0-Ou-qPm">
             <objects>
                 <viewController id="rA6-6a-3x4" customClass="detailsViewController" customModule="Aktuel" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,37 +123,76 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hangi Market" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1E-wS-bea">
-                                <rect key="frame" x="103" y="299" width="169" height="68"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8dp-K5-UAH">
+                                <rect key="frame" x="0.0" y="116" width="375" height="497"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailsCell" rowHeight="139" id="Vdt-A7-29R">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="139"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vdt-A7-29R" id="PVf-En-38j">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="138.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jdw-Tl-Mb7" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="610" width="375" height="57"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="LEh-6u-7D0"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="j1E-wS-bea" firstAttribute="centerX" secondItem="OdY-sa-LGS" secondAttribute="centerX" id="0K4-TU-7Ij"/>
-                            <constraint firstItem="j1E-wS-bea" firstAttribute="centerY" secondItem="OdY-sa-LGS" secondAttribute="centerY" id="BSv-tS-9YN"/>
-                            <constraint firstItem="j1E-wS-bea" firstAttribute="top" secondItem="IUf-Vk-E5f" secondAttribute="top" constant="235" id="S9Y-4A-tR3"/>
-                            <constraint firstItem="j1E-wS-bea" firstAttribute="leading" secondItem="IUf-Vk-E5f" secondAttribute="leading" constant="103" id="gLw-mZ-TJU"/>
+                            <constraint firstItem="8dp-K5-UAH" firstAttribute="leading" secondItem="IUf-Vk-E5f" secondAttribute="leading" id="67S-sb-QqY"/>
+                            <constraint firstItem="8dp-K5-UAH" firstAttribute="top" secondItem="IUf-Vk-E5f" secondAttribute="top" id="D2c-TH-2gI"/>
+                            <constraint firstItem="Jdw-Tl-Mb7" firstAttribute="bottom" secondItem="IUf-Vk-E5f" secondAttribute="bottom" id="EZd-0v-YGC"/>
+                            <constraint firstItem="Jdw-Tl-Mb7" firstAttribute="top" secondItem="8dp-K5-UAH" secondAttribute="bottom" constant="-3" id="Q8V-lf-ZGu"/>
+                            <constraint firstItem="8dp-K5-UAH" firstAttribute="leading" secondItem="Jdw-Tl-Mb7" secondAttribute="leading" id="R5p-uf-bJg"/>
+                            <constraint firstItem="Jdw-Tl-Mb7" firstAttribute="leading" secondItem="IUf-Vk-E5f" secondAttribute="leading" id="XZh-Wg-rCt"/>
+                            <constraint firstItem="8dp-K5-UAH" firstAttribute="trailing" secondItem="IUf-Vk-E5f" secondAttribute="trailing" id="uUf-Ta-MlB"/>
+                            <constraint firstItem="Jdw-Tl-Mb7" firstAttribute="trailing" secondItem="IUf-Vk-E5f" secondAttribute="trailing" id="vGb-Un-SzV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IUf-Vk-E5f"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Market Adları" largeTitleDisplayMode="always" id="j45-8H-ykK"/>
                     <connections>
-                        <outlet property="marketAdlari" destination="j1E-wS-bea" id="Kwb-UB-FjX"/>
+                        <outlet property="admobDetails" destination="Jdw-Tl-Mb7" id="NFh-2e-P8F"/>
+                        <outlet property="navBarItemOutlet" destination="j45-8H-ykK" id="Vni-cn-tBt"/>
+                        <outlet property="tableViewDetails" destination="8dp-K5-UAH" id="MTM-GW-ayu"/>
+                        <segue destination="ltQ-HQ-6mg" kind="show" identifier="brosurSegue" id="x1f-ei-gGp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ara-Is-iT0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2100" y="133.5832083958021"/>
         </scene>
+        <!--Brosur Details-->
+        <scene sceneID="Y1d-oS-Pb7">
+            <objects>
+                <viewController id="ltQ-HQ-6mg" customClass="brosurDetails" customModule="Aktuel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PYg-5v-gvj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="p8V-LE-AF2"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="gWL-VR-fIj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wWF-u2-X1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2874" y="134"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="v1z-EU-M3H">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kff-Ig-bLh" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T4p-2g-wSJ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="T4p-2g-wSJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.5675105453" green="0.80479091410000003" blue="0.99633532759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
@@ -168,6 +207,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nfy-27-pIv"/>
+        <segue reference="Vpp-Yp-ANU"/>
     </inferredMetricsTieBreakers>
 </document>

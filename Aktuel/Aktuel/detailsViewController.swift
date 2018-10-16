@@ -7,17 +7,131 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class detailsViewController: UIViewController {
+class detailsViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
 
-    @IBOutlet weak var marketAdlari: UILabel!
+    
+    
+    @IBOutlet weak var navBarItemOutlet: UINavigationItem!
+    @IBOutlet weak var tableViewDetails: UITableView!
+    @IBOutlet weak var admobDetails: GADBannerView! //UIView yerine yazdık
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        marketAdlari.text = mTuple[myIndex].1
+        tableViewDetails.delegate = self
+        tableViewDetails.dataSource = self
+        
+        let talep = GADRequest() //Reklam talep ediyoruz
+        talep.testDevices = [kGADSimulatorID] //Simulatorde gerçek reklam göstermeyip admob tarafından kara listeye alınabilir
+        admobDetails.adUnitID = "ca-app-pub-9535434814729620/7481015648"
+        admobDetails.rootViewController = self
+        admobDetails.load(talep)
+        
+        
+        //NavBardaki Titlea Market adlarını atıyoruz
+        navBarItemOutlet.title = mTuple[myIndex].1
+        
+        
+        //HTTPS güvenlik açısından info.plistten ayarımızıda yaptık. yoksa çalışmayacaktı
+        let myURL = URL(string: "http://vitrindirim.com/api/aktuel-urunler/all")!
+        let session = URLSession.shared
+        //internete bağlanıp veriyi çekeceğiz
+        let task = session.dataTask(with: myURL, completionHandler: { (data, response, error) in
+            
+            //eğer hata varsa
+            if error != nil
+            {
+                let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(okButton)
+                self.present(alert, animated: true, completion: nil)
+            }
+            else
+            {
+                if data != nil
+                {
+                    do {
+                        
+                        let jSONResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! Dictionary<String, AnyObject>
+                        
+                        DispatchQueue.main.async {
+                            //print(jSONResult)
+                            
+                            //Ürünler Arrayini çekiyoruz
+                            //let urunler = jSONResult["urunler"] as! [String : AnyObject]
+                            
+                            //let aciklama = String(describing: urunler["aciklama"]!)
+                            //self.aciklamaUrunler.text = "Falan: \(aciklama)"
+                            
+                           
+                            
+                            
+                        }
+                        
+                        
+                    } catch {
+                        
+                    }
+                
+                }
+                
+            }
+            
+        })
+        
+        task.resume()
+    
+        setupNavBar()
     }
     
-
+    
+    
+    func setupNavBar()
+    {
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        } else {
+            // Fallback on earlier versions
+        }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return mTuple.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //let cell = UITableViewCell()
+        //cell.textLabel?.text = "Marketler"
+        //return cell
+        
+        
+        let cell = UITableViewCell()
+        cell.textLabel?.text = "Caner Uçar"
+        return cell
+        
+        
+        
+        //seçilen cell'in arkaplan rengi /sonradan değişecektir
+        //let bgColorView = UIView()
+        //bgColorView.backgroundColor = UIColor.white
+        //cell.selectedBackgroundView = bgColorView
+        
+        
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        myIndex = indexPath.row
+        performSegue(withIdentifier: "brosurSegue", sender: self)
+        
+        
+    }
     
 
 }

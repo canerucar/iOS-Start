@@ -36,7 +36,17 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         admobView.rootViewController = self
         admobView.load(talep)
         
+        setupNavBar()
         
+    }
+    
+    func setupNavBar()
+    {
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = true
+        } else {
+            // Fallback on earlier versions
+        }
         
     }
     
