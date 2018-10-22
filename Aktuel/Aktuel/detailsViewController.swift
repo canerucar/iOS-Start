@@ -5,23 +5,23 @@
 //  Created by Caner Uçar on 11.10.2018.
 //  Copyright © 2018 Caner Uçar. All rights reserved.
 //
-
 import UIKit
 import GoogleMobileAds
 
-class detailsViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
 
+
+class detailsViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
+    
     
     
     @IBOutlet weak var navBarItemOutlet: UINavigationItem!
     @IBOutlet weak var tableViewDetails: UITableView!
     @IBOutlet weak var admobDetails: GADBannerView! //UIView yerine yazdık
     
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableViewDetails.delegate = self
         tableViewDetails.dataSource = self
         
@@ -58,14 +58,18 @@ class detailsViewController: UIViewController, UITableViewDataSource,UITableView
                         
                         let jSONResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as! Dictionary<String, AnyObject>
                         
-                        DispatchQueue.main.async {
-                            //print(jSONResult)
+                          DispatchQueue.main.async { //indirdiğimz datanın hızlı gelmesi için arka planda hızlandırma
+                            print(jSONResult) //JSON Verilerini LOG'da görmemiz için basıyoruz
                             
-                            //Ürünler Arrayini çekiyoruz
+                            
+                            
+                            //let cell = detailsCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "detailsCell") //MenuCell sınıfında hücre şablonumuzu elde ediyoruz
+                            
+                            //let bos = jSONResult[""] as! [String : AnyObject]
                             //let urunler = jSONResult["urunler"] as! [String : AnyObject]
                             
                             //let aciklama = String(describing: urunler["aciklama"]!)
-                            //self.aciklamaUrunler.text = "Falan: \(aciklama)"
+                            //cell.urunlerAciklama.text = "USD: \(aciklama)"
                             
                            
                             
@@ -76,7 +80,7 @@ class detailsViewController: UIViewController, UITableViewDataSource,UITableView
                     } catch {
                         
                     }
-                
+                    
                 }
                 
             }
@@ -84,7 +88,7 @@ class detailsViewController: UIViewController, UITableViewDataSource,UITableView
         })
         
         task.resume()
-    
+        
         setupNavBar()
     }
     
@@ -112,26 +116,35 @@ class detailsViewController: UIViewController, UITableViewDataSource,UITableView
         
         let cell = UITableViewCell()
         cell.textLabel?.text = "Caner Uçar"
-        return cell
+        //return cell
+        
+        //let cell = tableViewDetails.dequeueReusableCell(withIdentifier: "detailsCell") as! detailsCell
+         //cell.detailsBackgroundImage.image = UIImage(named: mTuple[indexPath.row].0)
         
         
         
         //seçilen cell'in arkaplan rengi /sonradan değişecektir
-        //let bgColorView = UIView()
-        //bgColorView.backgroundColor = UIColor.white
-        //cell.selectedBackgroundView = bgColorView
+        let bgColorView = UIView()
+        bgColorView.backgroundColor = UIColor.white
+        cell.selectedBackgroundView = bgColorView
         
         
+        return cell
+        
+       
+        
+      
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+    
         myIndex = indexPath.row
         performSegue(withIdentifier: "brosurSegue", sender: self)
         
         
     }
     
-
+    
 }

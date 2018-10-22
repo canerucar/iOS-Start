@@ -9,24 +9,22 @@
 import UIKit
 import GoogleMobileAds
 
-
-let mTuple = [("a101","A-101","25"), ("bim","BİM","20"), ("migros","MİGROS","24"), ("hakmar","HAKMAR","28")];
+//1.si assetsdeki resimler, 2.si Göstereceğimiz Labellar, 3.sü şimdilik öylesine
+let mTuple = [("a101","Harca Harca Bitmez","28 Mart 2008"), ("bim","Toptan fiyatına, Perakende Satış","Mayıs 1995"), ("migros","Bu Benim Dünyam","1954, İstanbul"), ("hakmar","Kalite Bir Haktır","1997, İstanbul")];
 
 var myIndex = 0
 
 
 class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
    
+    //TableView ve Admob Viewlarını tanımladık
     @IBOutlet weak var tableViewMain: UITableView!
     @IBOutlet weak var admobView: GADBannerView! //UIView yerine yazdık
-    
-    //let mTuple = [("a101","A-101","25"), ("bim","BİM","20"), ("migros","MİGROS","24"), ("hakmar","HAKMAR","28")];
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //tableView delegate ve datasource bağlantıları
         tableViewMain.delegate = self
         tableViewMain.dataSource = self
         
@@ -40,6 +38,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         
     }
     
+    //NavigationBar Large Title
     func setupNavBar()
     {
         if #available(iOS 11.0, *) {
@@ -50,16 +49,14 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         
     }
     
-    
+    //Tableview kaç tane satır olacağını belirliyoruz
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mTuple.count
     }
     
+    //Tableview satırlarında neler gözükecek
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = UITableViewCell()
-        //cell.textLabel?.text = "Marketler"
-        //return cell
-        
+      
         
         let cell = tableViewMain.dequeueReusableCell(withIdentifier: "Cell") as! mainCell
         cell.marketlerImage.image = UIImage(named: mTuple[indexPath.row].0)
@@ -76,6 +73,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         return cell
     }
     
+    //Tableview satırına tıklandığında ne olacak
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         myIndex = indexPath.row

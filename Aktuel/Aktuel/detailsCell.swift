@@ -1,22 +1,18 @@
 //
-//  mainCell.swift
+//  detailsCell.swift
 //  Aktuel
 //
-//  Created by Caner Uçar on 10.10.2018.
+//  Created by Caner Uçar on 17.10.2018.
 //  Copyright © 2018 Caner Uçar. All rights reserved.
 //
 
 import UIKit
 
-class mainCell: UITableViewCell {
+class detailsCell: UITableViewCell {
 
-    //ViewController Tableviewdaki Cell bağlantıları
-    
-    @IBOutlet weak var marketlerImage: UIImageView!
-    @IBOutlet weak var marketlerName: UILabel!
-    @IBOutlet weak var brosurDate: UILabel!
-    
-    
+    @IBOutlet weak var detailsBackgroundImage: UIImageView!
+    //detailsViewController Tableview Cell bağlantısı
+    @IBOutlet weak var urunlerAciklama: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,7 +21,7 @@ class mainCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
+
         // Configure the view for the selected state
     }
 

@@ -36,31 +36,33 @@
                                                         <constraint firstAttribute="height" constant="134" id="z8V-jF-6eR"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marketler" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKG-lq-ShG">
-                                                    <rect key="frame" x="199" y="11" width="140" height="50"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="tarih" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbv-4k-XNT">
+                                                    <rect key="frame" x="168" y="93" width="192" height="26"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="j9v-bc-iRd"/>
-                                                        <constraint firstAttribute="width" constant="140" id="wIc-76-r0G"/>
+                                                        <constraint firstAttribute="height" constant="26" id="Pvl-va-sJ2"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tarih" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbv-4k-XNT">
-                                                    <rect key="frame" x="222" y="97" width="95" height="26"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Marketler" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wKG-lq-ShG">
+                                                    <rect key="frame" x="166" y="7" width="207" height="50"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="fbv-4k-XNT" secondAttribute="trailing" constant="-1" id="24d-OF-3Mq"/>
+                                                <constraint firstItem="wKG-lq-ShG" firstAttribute="top" secondItem="dUQ-Fh-my1" secondAttribute="topMargin" constant="-13" id="3pV-o2-Ez7"/>
                                                 <constraint firstItem="BqN-6J-1E3" firstAttribute="top" secondItem="dUQ-Fh-my1" secondAttribute="top" id="6Ok-9O-Wvy"/>
-                                                <constraint firstItem="wKG-lq-ShG" firstAttribute="top" secondItem="dUQ-Fh-my1" secondAttribute="topMargin" id="W6v-gV-bhd"/>
-                                                <constraint firstItem="wKG-lq-ShG" firstAttribute="leading" secondItem="BqN-6J-1E3" secondAttribute="trailing" constant="39" id="a3Z-dV-5id"/>
+                                                <constraint firstItem="fbv-4k-XNT" firstAttribute="top" secondItem="wKG-lq-ShG" secondAttribute="bottom" constant="36" id="Pii-qQ-5eS"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fbv-4k-XNT" secondAttribute="bottom" constant="4" id="gO1-1T-RKN"/>
                                                 <constraint firstItem="BqN-6J-1E3" firstAttribute="leading" secondItem="dUQ-Fh-my1" secondAttribute="leading" constant="26" id="qlO-0h-UZr"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="wKG-lq-ShG" secondAttribute="trailing" constant="21" id="vEX-fm-jrs"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="wKG-lq-ShG" secondAttribute="trailing" constant="-14" id="uI0-6V-DVx"/>
                                                 <constraint firstAttribute="bottom" secondItem="BqN-6J-1E3" secondAttribute="bottom" constant="-0.5" id="xwz-Vx-eMJ"/>
+                                                <constraint firstItem="fbv-4k-XNT" firstAttribute="leading" secondItem="BqN-6J-1E3" secondAttribute="trailing" constant="8" symbolic="YES" id="ydB-cX-xHX"/>
+                                                <constraint firstItem="wKG-lq-ShG" firstAttribute="leading" secondItem="BqN-6J-1E3" secondAttribute="trailing" constant="6" id="zjP-4b-BjS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -113,7 +115,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1210" y="134"/>
+            <point key="canvasLocation" x="1208.8" y="133.5832083958021"/>
         </scene>
         <!--Market Adları-->
         <scene sceneID="XC0-Ou-qPm">
@@ -124,16 +126,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8dp-K5-UAH">
-                                <rect key="frame" x="0.0" y="116" width="375" height="497"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="549"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailsCell" rowHeight="139" id="Vdt-A7-29R">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailsViewCell" rowHeight="139" id="Vdt-A7-29R" customClass="detailsCell" customModule="Aktuel" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vdt-A7-29R" id="PVf-En-38j">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="138.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N8X-F0-nzY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzC-yX-Vh2">
+                                                    <rect key="frame" x="135" y="45" width="106" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="detailsBackgroundImage" destination="N8X-F0-nzY" id="qFo-Jf-efl"/>
+                                            <outlet property="marketlerBackgroundImage" destination="N8X-F0-nzY" id="PRB-Uw-crq"/>
+                                            <outlet property="urunlerAciklama" destination="fzC-yX-Vh2" id="VLb-HW-XhX"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -158,7 +178,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IUf-Vk-E5f"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Market Adları" largeTitleDisplayMode="always" id="j45-8H-ykK"/>
+                    <navigationItem key="navigationItem" title="Market Adları" largeTitleDisplayMode="never" id="j45-8H-ykK"/>
                     <connections>
                         <outlet property="admobDetails" destination="Jdw-Tl-Mb7" id="NFh-2e-P8F"/>
                         <outlet property="navBarItemOutlet" destination="j45-8H-ykK" id="Vni-cn-tBt"/>
