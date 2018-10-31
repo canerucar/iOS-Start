@@ -61,6 +61,10 @@ class detailsViewController: UIViewController, UITableViewDataSource,UITableView
                           DispatchQueue.main.async { //indirdiğimz datanın hızlı gelmesi için arka planda hızlandırma
                             print(jSONResult) //JSON Verilerini LOG'da görmemiz için basıyoruz
                             
+                            //let urunler = jSONResult["urunler"] as! [String:AnyObject]
+                            
+                            //let aciklamalar = String(describing: urunler["aciklama"]!)
+                            
                             
                             
                             //let cell = detailsCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "detailsCell") //MenuCell sınıfında hücre şablonumuzu elde ediyoruz
