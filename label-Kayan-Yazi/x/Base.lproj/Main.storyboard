@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="x" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sözleşmeyi okudum kabul ediyorum gibi bir şey de diyebiiriz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnh-Av-V5r" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="62" y="333" width="313" height="147"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i7g-VB-U64">
+                                <rect key="frame" x="7" y="391" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="9Q6-OA-mej"/>
+                                </constraints>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.60585332569999995" blue="0.47044360860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i7g-VB-U64" firstAttribute="centerY" secondItem="Nnh-Av-V5r" secondAttribute="centerY" id="432-T3-JPD"/>
+                            <constraint firstItem="i7g-VB-U64" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="80o-KV-IZy"/>
+                            <constraint firstItem="Nnh-Av-V5r" firstAttribute="leading" secondItem="i7g-VB-U64" secondAttribute="trailing" constant="6" id="YGc-eB-ScO"/>
+                            <constraint firstAttribute="trailing" secondItem="Nnh-Av-V5r" secondAttribute="trailing" id="YLf-Tk-zjZ"/>
+                            <constraint firstItem="i7g-VB-U64" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="347" id="gjB-gK-gAh"/>
+                            <constraint firstItem="Nnh-Av-V5r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="289" id="hov-4t-jUn"/>
+                            <constraint firstItem="i7g-VB-U64" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="7" id="iln-gy-CxZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
