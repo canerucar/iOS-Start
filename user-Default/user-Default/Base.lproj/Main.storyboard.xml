@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="user_Default" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kullanıcı Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nJU-Sa-o5H">
+                                <rect key="frame" x="99" y="198" width="177" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Parola" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gzn-8A-P8r">
+                                <rect key="frame" x="99" y="255" width="177" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R87-ww-Xuh">
+                                <rect key="frame" x="99" y="315" width="49" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beni Hatırla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFJ-Gs-JrO">
+                                <rect key="frame" x="166" y="320" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tH6-a3-Ncc">
+                                <rect key="frame" x="99" y="385" width="177" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="izh-A8-6uZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.60585332569999995" blue="0.47044360860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nJU-Sa-o5H" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Nb-wu-t82"/>
+                            <constraint firstItem="R87-ww-Xuh" firstAttribute="leading" secondItem="tH6-a3-Ncc" secondAttribute="leading" id="1KM-1Q-EF9"/>
+                            <constraint firstItem="R87-ww-Xuh" firstAttribute="top" secondItem="gzn-8A-P8r" secondAttribute="bottom" constant="30" id="1OJ-4Z-Ohs"/>
+                            <constraint firstItem="R87-ww-Xuh" firstAttribute="centerY" secondItem="WFJ-Gs-JrO" secondAttribute="centerY" id="6uh-QU-le3"/>
+                            <constraint firstItem="nJU-Sa-o5H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="178" id="AZs-lr-M53"/>
+                            <constraint firstItem="nJU-Sa-o5H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="BQV-m1-Gpo"/>
+                            <constraint firstItem="tH6-a3-Ncc" firstAttribute="top" secondItem="R87-ww-Xuh" secondAttribute="bottom" constant="39" id="IoR-Jg-NjE"/>
+                            <constraint firstItem="nJU-Sa-o5H" firstAttribute="leading" secondItem="gzn-8A-P8r" secondAttribute="leading" id="T4p-7f-pmr"/>
+                            <constraint firstItem="gzn-8A-P8r" firstAttribute="trailing" secondItem="tH6-a3-Ncc" secondAttribute="trailing" id="aBa-5C-Y02"/>
+                            <constraint firstItem="gzn-8A-P8r" firstAttribute="leading" secondItem="R87-ww-Xuh" secondAttribute="leading" id="pcM-40-2Zd"/>
+                            <constraint firstItem="nJU-Sa-o5H" firstAttribute="trailing" secondItem="gzn-8A-P8r" secondAttribute="trailing" id="qcF-0J-C9n"/>
+                            <constraint firstItem="WFJ-Gs-JrO" firstAttribute="leading" secondItem="R87-ww-Xuh" secondAttribute="trailing" constant="18" id="sPh-7g-e7m"/>
+                            <constraint firstItem="gzn-8A-P8r" firstAttribute="top" secondItem="nJU-Sa-o5H" secondAttribute="bottom" constant="27" id="xge-GI-lT3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mySwitch" destination="R87-ww-Xuh" id="LAr-qM-7QT"/>
+                        <outlet property="passwordTF" destination="gzn-8A-P8r" id="uvK-R8-KCZ"/>
+                        <outlet property="usernameTF" destination="nJU-Sa-o5H" id="LEO-gi-gSN"/>
+                        <segue destination="Hac-IJ-yQ6" kind="presentation" identifier="loginSegue" id="KrE-xf-g3O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rla-cW-7ki">
+            <objects>
+                <viewController id="Hac-IJ-yQ6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ikc-fC-nb4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hoşgeldiniz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJv-sl-VZw">
+                                <rect key="frame" x="88" y="306" width="198" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NJv-sl-VZw" firstAttribute="centerX" secondItem="ikc-fC-nb4" secondAttribute="centerX" id="569-PD-nk6"/>
+                            <constraint firstItem="NJv-sl-VZw" firstAttribute="top" secondItem="MDc-NF-ha5" secondAttribute="top" constant="286" id="NF5-0U-l16"/>
+                            <constraint firstItem="NJv-sl-VZw" firstAttribute="leading" secondItem="MDc-NF-ha5" secondAttribute="leading" constant="88" id="Qph-wv-33Y"/>
+                            <constraint firstItem="NJv-sl-VZw" firstAttribute="centerY" secondItem="ikc-fC-nb4" secondAttribute="centerY" id="Vj6-qc-fKR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MDc-NF-ha5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnN-Ls-BI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.6" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
