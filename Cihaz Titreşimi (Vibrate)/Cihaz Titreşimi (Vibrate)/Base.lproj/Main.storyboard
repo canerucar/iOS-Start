@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cihaz_Titres_imi__Vibrate_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuJ-HF-Bzh">
+                                <rect key="frame" x="108" y="172" width="158" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="S01-ao-5sC"/>
+                                </constraints>
+                                <state key="normal" title="Titreşim 1">
+                                    <color key="titleColor" red="0.96435421710000002" green="0.97242063280000002" blue="0.98476737739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="titresim1Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SgB-3h-CSG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgo-MW-iNl">
+                                <rect key="frame" x="108" y="252" width="158" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="6Mh-dw-fkP"/>
+                                </constraints>
+                                <state key="normal" title="Titreşim 2">
+                                    <color key="titleColor" red="0.96435421710000002" green="0.97242063280000002" blue="0.98476737739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="titresim2Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mXy-N4-EOH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sun-Ex-WhX">
+                                <rect key="frame" x="108" y="333" width="158" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="Fid-in-yih"/>
+                                </constraints>
+                                <state key="normal" title="Titreşim 3">
+                                    <color key="titleColor" red="0.96435421710000002" green="0.97242063280000002" blue="0.98476737739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="titresim2Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3zu-or-L2b"/>
+                                    <action selector="titresim3Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBg-Js-WCA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1T-z8-EaN">
+                                <rect key="frame" x="62" y="411" width="251" height="54"/>
+                                <state key="normal" title="iPhone 7 Ve Üstü Titreşimi">
+                                    <color key="titleColor" red="0.96435421710000002" green="0.97242063280000002" blue="0.98476737739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="iPhone7Ustu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dov-Ta-jFU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35670544399999998" green="0.61559215069999995" blue="0.80112532380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pgo-MW-iNl" firstAttribute="trailing" secondItem="Sun-Ex-WhX" secondAttribute="trailing" id="2XP-Aj-FV0"/>
+                            <constraint firstItem="Sun-Ex-WhX" firstAttribute="centerX" secondItem="N1T-z8-EaN" secondAttribute="centerX" id="7GI-bH-ewk"/>
+                            <constraint firstItem="nuJ-HF-Bzh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="152" id="Ani-q0-osM"/>
+                            <constraint firstItem="N1T-z8-EaN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="DDu-g2-N1g"/>
+                            <constraint firstItem="Pgo-MW-iNl" firstAttribute="leading" secondItem="Sun-Ex-WhX" secondAttribute="leading" id="DQn-ge-gkJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N1T-z8-EaN" secondAttribute="bottom" constant="202" id="Gr3-5q-p3b"/>
+                            <constraint firstItem="nuJ-HF-Bzh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="JGG-X6-fiZ"/>
+                            <constraint firstItem="nuJ-HF-Bzh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iz7-50-4W3"/>
+                            <constraint firstItem="nuJ-HF-Bzh" firstAttribute="trailing" secondItem="Pgo-MW-iNl" secondAttribute="trailing" id="mmJ-ui-JkY"/>
+                            <constraint firstItem="N1T-z8-EaN" firstAttribute="top" secondItem="Sun-Ex-WhX" secondAttribute="bottom" constant="24" id="nyo-nV-Fe1"/>
+                            <constraint firstItem="Pgo-MW-iNl" firstAttribute="top" secondItem="nuJ-HF-Bzh" secondAttribute="bottom" constant="26" id="rS6-HW-Rzc"/>
+                            <constraint firstItem="Sun-Ex-WhX" firstAttribute="top" secondItem="Pgo-MW-iNl" secondAttribute="bottom" constant="27" id="vgl-Qa-Adn"/>
+                            <constraint firstItem="nuJ-HF-Bzh" firstAttribute="leading" secondItem="Pgo-MW-iNl" secondAttribute="leading" id="xHM-5M-VnB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
