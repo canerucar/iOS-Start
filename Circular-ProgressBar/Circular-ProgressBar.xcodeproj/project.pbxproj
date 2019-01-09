@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EDEC35CBC2E0B684F605E7E /* Pods_Circular_ProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DF2C83FE840E8E1DA2299F /* Pods_Circular_ProgressBar.framework */; };
+		9C14498521D0EDBD003F7360 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14498421D0EDBD003F7360 /* AppDelegate.swift */; };
+		9C14498721D0EDBD003F7360 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C14498621D0EDBD003F7360 /* ViewController.swift */; };
+		9C14498A21D0EDBD003F7360 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C14498821D0EDBD003F7360 /* Main.storyboard */; };
+		9C14498C21D0EDBF003F7360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C14498B21D0EDBF003F7360 /* Assets.xcassets */; };
+		9C14498F21D0EDBF003F7360 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C14498D21D0EDBF003F7360 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65DF2C83FE840E8E1DA2299F /* Pods_Circular_ProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Circular_ProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F16A5BC44BEDFFFB10D4CE /* Pods-Circular-ProgressBar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Circular-ProgressBar.release.xcconfig"; path = "Pods/Target Support Files/Pods-Circular-ProgressBar/Pods-Circular-ProgressBar.release.xcconfig"; sourceTree = "<group>"; };
+		9C14498121D0EDBD003F7360 /* Circular-ProgressBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circular-ProgressBar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C14498421D0EDBD003F7360 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C14498621D0EDBD003F7360 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C14498921D0EDBD003F7360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C14498B21D0EDBF003F7360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C14498E21D0EDBF003F7360 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C14499021D0EDBF003F7360 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE9B8ABF99B28182D0ACB26D /* Pods-Circular-ProgressBar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Circular-ProgressBar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Circular-ProgressBar/Pods-Circular-ProgressBar.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C14497E21D0EDBD003F7360 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EDEC35CBC2E0B684F605E7E /* Pods_Circular_ProgressBar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7834F54F2B1AE8AA16FE7960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65DF2C83FE840E8E1DA2299F /* Pods_Circular_ProgressBar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C14497821D0EDBD003F7360 = {
+			isa = PBXGroup;
+			children = (
+				9C14498321D0EDBD003F7360 /* Circular-ProgressBar */,
+				9C14498221D0EDBD003F7360 /* Products */,
+				9DB72C85ED3177632DE4887B /* Pods */,
+				7834F54F2B1AE8AA16FE7960 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9C14498221D0EDBD003F7360 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C14498121D0EDBD003F7360 /* Circular-ProgressBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C14498321D0EDBD003F7360 /* Circular-ProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				9C14498421D0EDBD003F7360 /* AppDelegate.swift */,
+				9C14498621D0EDBD003F7360 /* ViewController.swift */,
+				9C14498821D0EDBD003F7360 /* Main.storyboard */,
+				9C14498B21D0EDBF003F7360 /* Assets.xcassets */,
+				9C14498D21D0EDBF003F7360 /* LaunchScreen.storyboard */,
+				9C14499021D0EDBF003F7360 /* Info.plist */,
+			);
+			path = "Circular-ProgressBar";
+			sourceTree = "<group>";
+		};
+		9DB72C85ED3177632DE4887B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE9B8ABF99B28182D0ACB26D /* Pods-Circular-ProgressBar.debug.xcconfig */,
+				84F16A5BC44BEDFFFB10D4CE /* Pods-Circular-ProgressBar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C14498021D0EDBD003F7360 /* Circular-ProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C14499321D0EDBF003F7360 /* Build configuration list for PBXNativeTarget "Circular-ProgressBar" */;
+			buildPhases = (
+				BA04A7A7FDA603542F344DBF /* [CP] Check Pods Manifest.lock */,
+				9C14497D21D0EDBD003F7360 /* Sources */,
+				9C14497E21D0EDBD003F7360 /* Frameworks */,
+				9C14497F21D0EDBD003F7360 /* Resources */,
+				08D4F876EF09AA658B9221C8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Circular-ProgressBar";
+			productName = "Circular-ProgressBar";
+			productReference = 9C14498121D0EDBD003F7360 /* Circular-ProgressBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C14497921D0EDBD003F7360 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Caner Uçar";
+				TargetAttributes = {
+					9C14498021D0EDBD003F7360 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 9C14497C21D0EDBD003F7360 /* Build configuration list for PBXProject "Circular-ProgressBar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C14497821D0EDBD003F7360;
+			productRefGroup = 9C14498221D0EDBD003F7360 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C14498021D0EDBD003F7360 /* Circular-ProgressBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C14497F21D0EDBD003F7360 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C14498F21D0EDBF003F7360 /* LaunchScreen.storyboard in Resources */,
+				9C14498C21D0EDBF003F7360 /* Assets.xcassets in Resources */,
+				9C14498A21D0EDBD003F7360 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08D4F876EF09AA658B9221C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Circular-ProgressBar/Pods-Circular-ProgressBar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCircularProgressBar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Circular-ProgressBar/Pods-Circular-ProgressBar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA04A7A7FDA603542F344DBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Circular-ProgressBar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C14497D21D0EDBD003F7360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C14498721D0EDBD003F7360 /* ViewController.swift in Sources */,
+				9C14498521D0EDBD003F7360 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C14498821D0EDBD003F7360 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C14498921D0EDBD003F7360 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C14498D21D0EDBF003F7360 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C14498E21D0EDBF003F7360 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C14499121D0EDBF003F7360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C14499221D0EDBF003F7360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C14499421D0EDBF003F7360 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE9B8ABF99B28182D0ACB26D /* Pods-Circular-ProgressBar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22XVPVC3NZ;
+				INFOPLIST_FILE = "Circular-ProgressBar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.canerucar.Circular-ProgressBar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C14499521D0EDBF003F7360 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84F16A5BC44BEDFFFB10D4CE /* Pods-Circular-ProgressBar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22XVPVC3NZ;
+				INFOPLIST_FILE = "Circular-ProgressBar/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.canerucar.Circular-ProgressBar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C14497C21D0EDBD003F7360 /* Build configuration list for PBXProject "Circular-ProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C14499121D0EDBF003F7360 /* Debug */,
+				9C14499221D0EDBF003F7360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C14499321D0EDBF003F7360 /* Build configuration list for PBXNativeTarget "Circular-ProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C14499421D0EDBF003F7360 /* Debug */,
+				9C14499521D0EDBF003F7360 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C14497921D0EDBD003F7360 /* Project object */;
+}
