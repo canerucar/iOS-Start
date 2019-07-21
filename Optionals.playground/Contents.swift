@@ -25,3 +25,13 @@ var xd:String? = "Swift"
 //İster boş değer verin, isterseniz dolu verin ama değer verin
 
 print(xd ?? "Geçersiz Değer")
+
+//Opsiyonel Bağlama (Optional Binding)
+
+var baglamaDegiskeni: String?
+
+let atananSabit = baglamaDegiskeni
+
+print("Opsiyonel Değil = \(atananSabit)")
+print("Opsiyonel = \(baglamaDegiskeni)")
+
