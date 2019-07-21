@@ -17,3 +17,11 @@ if let number = Int(myAge) //ünlem kullanmaktansa if let kullanıp bir filtre u
     let result = number * 5
     print(result)
 }
+
+var xd:String? = "Swift"
+
+//İlk değer olarak bizden kesin birşey istiyor.
+
+//İster boş değer verin, isterseniz dolu verin ama değer verin
+
+print(xd ?? "Geçersiz Değer")
