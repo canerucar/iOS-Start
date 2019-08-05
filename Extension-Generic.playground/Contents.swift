@@ -49,3 +49,117 @@ printAnyElements(anyArray: [1,2,3,4,5])
 printAnySeq(anything: "Canerimsi")
 
 
+//Extension ile herhangi bir şeye yeni bir özellik katılır
+
+var x = "deneme"
+
+//x.characters.count //Swift 3'te böyleydi
+x.count
+
+extension String{
+    
+    var say:Int{
+        return self.count
+    }
+}
+
+x.say
+//------------------------------------------------------------
+
+var a = 3.0 //Afrika ülkelerinden birinin para birimi
+var b = 620.0 //Ülkemizdeki para birimi
+
+var c = a/b
+
+//Virgülden sonra 2 basamak için : Sayı 100 ile çarpılır. 10 un 2. kuvveti
+//Virgülden sonra 3 basamak için : Sayı 1000 ile çarpılır. 10 un 3. kuvveti
+//Virgülden sonra 4 basamak için : Sayı 10000 ile çarpılır. 10 un 4. kuvveti
+
+(c*1000)
+
+var d = (c*1000).rounded()
+d/1000
+
+extension Double{
+    func sayiyiYuvarla(basamak:Int)->Double{
+        let carpan = pow(10.0, Double(basamak))
+        return (self*carpan).rounded()/carpan
+    }
+}
+
+var e = 0.23456
+
+e.sayiyiYuvarla(basamak: 4)
+
+//sayıyı temsilen self kullanıyoruz
+
+extension Int{
+    mutating func kareAl(){
+        self = self*self
+    }
+    func kareAlmak()->Int{
+        return self*self
+    }
+    func cift()->String{
+        if self % 2 == 0{
+            return "Sayı Çifttir"
+        } else{
+            return "Sayı Tektir"
+        }
+    }
+}
+var k = 4
+k.kareAl()
+6.kareAlmak()
+57.cift()
+80.cift()
+
+// Generics ile esnek ve yeniden kullanılabilir kodlar yazılır. Bu yapılar değişken tipinden bağımsızdır.
+
+var sehirler = ["İstanbul","İzmir","Ankara"] // [String] Elemanları string olan bir array
+var IntArray = [1,2,3] // [Int]  Elemanları int olan bir array
+var DoubleArray = [3.14,2.5,3.5] // [Double]  Elemanları Double olan bir array
+
+func iller(il:[String]){
+    for i in il{
+        print(i)
+    }
+}
+//iller(il: sehirler)
+func tamSayilar(tamSayi:[Int]){
+    
+    for ts in tamSayi{
+        print(ts)
+    }
+}
+
+//tamSayilar(tamSayi: IntArray)
+func ondalikliSayilar(ondalikliSayi:[Double]){
+    
+    ondalikliSayi.map {print($0)}
+}
+
+//ondalikliSayilar(ondalikliSayi: DoubleArray)
+//GENERİCS TANIMLAMASI
+
+func herhangiBirArray<T>(array:[T]){
+    array.map{print($0)}
+    
+}
+herhangiBirArray(array: sehirler)
+herhangiBirArray(array: IntArray)
+herhangiBirArray(array: DoubleArray)
+// IKI Parametreli ve Aynı TİPLİ GENERIC TANIMLAMASI
+
+func ikiParametreli<T>(bir:T,iki:T){
+
+}
+
+//IKI Parametreli ve FARKLI TİPLİ GENERIC TANIMLAMASI
+func farkliTipliIkıParametreli<T,U>(bir:T, iki:U){
+    
+}
+
+
+/*Generic
+Array değeri farketmezsizin yazdırabilmemiz için kullanırız */
