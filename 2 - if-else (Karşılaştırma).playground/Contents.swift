@@ -61,3 +61,7 @@ else{
 var testing:String? //Nil'e eşit değilse true dön eşitse false dön
 var aaa = testing != nil ? true : false // 3 lü if ternary if
 print(aaa)
+
+
+var isim = "caner"
+var ifim = isim != "caner" ? "Değeriniz yanlış" : "değer doğru"

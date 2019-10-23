@@ -65,6 +65,7 @@ let tuples = (4,"Swift") //İlk değişken integer ikincisi String
 print(tuples) //tuple'ın ilk değerini gördük
 let (statusCode, status) = tuples //Değerleri atadık
 print(statusCode)
+print(status)
 
 //Optionals
 
