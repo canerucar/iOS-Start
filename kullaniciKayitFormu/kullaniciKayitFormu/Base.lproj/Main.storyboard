@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,34 +17,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1jw-bS-QAF">
-                                <rect key="frame" x="77" y="78" width="220" height="30"/>
+                                <rect key="frame" x="77" y="58" width="221" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Y42-vs-Ybb"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rZr-Zr-B9D">
-                                <rect key="frame" x="77" y="153" width="220" height="30"/>
+                                <rect key="frame" x="77" y="133" width="221" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KVo-Sv-D8d"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password again" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rwv-uU-mBN">
-                                <rect key="frame" x="77" y="218" width="220" height="30"/>
+                                <rect key="frame" x="77" y="198" width="221" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="wig-7g-4tc"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-Qy-Zgr">
-                                <rect key="frame" x="145" y="333" width="84" height="43"/>
+                                <rect key="frame" x="145" y="313" width="85" height="63"/>
                                 <state key="normal" title="Kayıt Ol"/>
                                 <connections>
                                     <action selector="kayitAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uT1-p5-hqr"/>
@@ -87,11 +82,11 @@
             <objects>
                 <viewController id="yup-8j-N0Q" customClass="secondViewController" customModule="kullaniciKayitFormu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d1m-xO-2bp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Word falan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqg-br-X9t">
-                                <rect key="frame" x="72" y="117" width="231" height="59"/>
+                                <rect key="frame" x="72" y="97" width="231" height="59"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,10 +101,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cME-V2-ib7"/>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="Cqg-br-X9t" id="DV1-BV-VVU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HFO-PI-ojP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="752.79999999999995" y="135.38230884557723"/>
+            <point key="canvasLocation" x="730" y="134"/>
         </scene>
     </scenes>
 </document>

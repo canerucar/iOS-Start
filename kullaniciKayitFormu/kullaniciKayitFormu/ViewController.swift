@@ -14,31 +14,20 @@ class ViewController: UIViewController
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var passwordAgainText: UITextField!
     
-    override func viewDidLoad()
-    {
+    override func viewDidLoad(){
         super.viewDidLoad()
     }
     @IBAction func kayitAction(_ sender: Any)
     {
-        if nameText.text == ""
-        {
+        if nameText.text == ""{
             newAlert()
-        }
-        
-        else if passwordText.text == ""
-        {
+        }else if passwordText.text == ""{
             newAlert()
-        }
-        else if passwordAgainText.text == ""
-        {
+        }else if passwordAgainText.text == ""{
             newAlert()
-        }
-        else if passwordText.text != passwordAgainText.text
-        {
+        }else if passwordText.text != passwordAgainText.text{
             newAlert()
-        }
-        else
-        {
+        }else{
             performSegue(withIdentifier: "ikinciSayfa", sender: nil)
         }
     }
@@ -49,6 +38,15 @@ class ViewController: UIViewController
         let okButton = UIAlertAction(title: "Tamam", style: UIAlertActionStyle.cancel, handler: nil)
         alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if !passwordText.text!.isEmpty && !passwordText.text!.isEmpty{
+            if segue.destination is secondViewController{
+                let SecondViewController = segue.destination as? secondViewController
+                SecondViewController?.name = nameText.text!
+            }
+        }
     }
     
 
