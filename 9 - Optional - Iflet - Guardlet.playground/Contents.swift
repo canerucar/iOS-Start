@@ -10,8 +10,7 @@ var myAge = "5" //ama kullanıcı yazıyla da beş yazabilir
 
 var myResult = Int(myAge)! * 5 //ünlem işareti, eminim demektir ama riskli
 
-if let number = Int(myAge) //ünlem kullanmaktansa if let kullanıp bir filtre uygulamak daha sağlıklı
-{
+if let number = Int(myAge){ //ünlem kullanmaktansa if let kullanıp bir filtre uygulamak daha sağlıklı
     let result = number * 5
     print(result)
 }

@@ -12,7 +12,7 @@
 		9C821086214C09DE00014896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C821084214C09DE00014896 /* Main.storyboard */; };
 		9C821088214C09DF00014896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C821087214C09DF00014896 /* Assets.xcassets */; };
 		9C82108B214C09DF00014896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C821089214C09DF00014896 /* LaunchScreen.storyboard */; };
-		9C821093214C09F400014896 /* kampanya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C821092214C09F400014896 /* kampanya.swift */; };
+		9C821093214C09F400014896 /* KampanyalarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C821092214C09F400014896 /* KampanyalarModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		9C821087214C09DF00014896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C82108A214C09DF00014896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C82108C214C09DF00014896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C821092214C09F400014896 /* kampanya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kampanya.swift; sourceTree = "<group>"; };
+		9C821092214C09F400014896 /* KampanyalarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KampanyalarModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				9C821080214C09DE00014896 /* AppDelegate.swift */,
-				9C821092214C09F400014896 /* kampanya.swift */,
+				9C821092214C09F400014896 /* KampanyalarModel.swift */,
 				9C821082214C09DE00014896 /* ViewController.swift */,
 				9C821084214C09DE00014896 /* Main.storyboard */,
 				9C821087214C09DF00014896 /* Assets.xcassets */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C821093214C09F400014896 /* kampanya.swift in Sources */,
+				9C821093214C09F400014896 /* KampanyalarModel.swift in Sources */,
 				9C821083214C09DE00014896 /* ViewController.swift in Sources */,
 				9C821081214C09DE00014896 /* AppDelegate.swift in Sources */,
 			);
