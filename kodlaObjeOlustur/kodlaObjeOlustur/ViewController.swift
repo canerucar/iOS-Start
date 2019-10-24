@@ -44,13 +44,16 @@ class ViewController: UIViewController
     
         @objc func myAction() {
         
-        myLabel.text = "Better Call Saul"
+        //myLabel.text = "Better Call Saul"
         
+            if myLabel.text == "Breaking Bad?"{
+                myLabel.text = "Better Call Saul"
+            }else{
+                myLabel.text = "Breaking Bad?"
+            }
+            
         }
-        
-        
-        
-        }
+}
 
 
 
