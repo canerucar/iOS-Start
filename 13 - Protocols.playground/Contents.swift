@@ -10,7 +10,6 @@ protocol Oyuncu{
     var isim:String {get}
     var canliMi:Bool { get set } //Hem can hem vurulabilir. Hem okumak hem işleme olduğu için getset
     var canSayisi:Int { get set }
-
 }
 
 extension Oyuncu{

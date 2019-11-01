@@ -65,3 +65,25 @@ print(aaa)
 
 var isim = "caner"
 var ifim = isim != "caner" ? "Değeriniz yanlış" : "değer doğru"
+
+
+
+//
+func loveCalculator(yourName:String,theirName:String)->UInt32{
+    let loveScore = arc4random_uniform(101)
+    
+    if loveScore>80 {
+        print("Puanınız : \(loveScore) Evlenin")
+    }else if loveScore > 60 && 80 < loveScore{
+        print("Puanınız : \(loveScore) İdare ediyonuz işte.")
+    }else{
+        print("Puanınız : \(loveScore) Neyse bir şey demek istemiyorum")
+    }
+    
+    return loveScore
+}
+
+
+let myScore = loveCalculator(yourName: "Ali", theirName: "Fatma")
+//print("Love Skorum : \(myScore)")
+
