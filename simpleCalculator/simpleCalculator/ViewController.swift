@@ -24,93 +24,74 @@ class ViewController: UIViewController
     
     var sonuc = 0
 
-    override func viewDidLoad()
-    {
+    override func viewDidLoad(){
         super.viewDidLoad()
         sonucLabel.text = ""
     }
 
-    override func didReceiveMemoryWarning()
-    {
+    override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
         
     }
     
-    @IBAction func toplamaButton(_ sender: Any)
-    {
-        if let firstNumber = Int(birinciSayiText.text!)
-        {
+    @IBAction func toplamaButton(_ sender: Any){
+        if let firstNumber = Int(birinciSayiText.text!){
             
-            if let secondNumber = Int(ikinciSayi.text!)
-            {
+            if let secondNumber = Int(ikinciSayi.text!){
                 sonuc = firstNumber+secondNumber
                 sonucLabel.text = String(sonuc)
             }
-            else
-            {sonucLabel.text = "Lütfen bir sayı giriniz"}
+            else{
+                sonucLabel.text = "Lütfen bir sayı giriniz"}
         }
-        else
-        {
+        else{
             sonucLabel.text = "Lütfen bir sayı giriniz"
-            
         }
     }
     
     @IBAction func cikarmaButton(_ sender: Any)
     {
-        if let firstNumber = Int(birinciSayiText.text!)
-        {
+        if let firstNumber = Int(birinciSayiText.text!){
             
-            if let secondNumber = Int(ikinciSayi.text!)
-            {
+            if let secondNumber = Int(ikinciSayi.text!){
                 sonuc = firstNumber-secondNumber
                 sonucLabel.text = String(sonuc)
             }
-            else
-            {sonucLabel.text = "Lütfen bir sayı giriniz"}
+            else{
+                sonucLabel.text = "Lütfen bir sayı giriniz"}
         }
-        else
-        {
+        else{
             sonucLabel.text = "Lütfen bir sayı giriniz"
             
         }
     }
     
-    @IBAction func carpmaButton(_ sender: Any)
-    {
+    @IBAction func carpmaButton(_ sender: Any){
         if let firstNumber = Int(birinciSayiText.text!)
         {
-            
-            if let secondNumber = Int(ikinciSayi.text!)
-            {
+            if let secondNumber = Int(ikinciSayi.text!){
                 sonuc = firstNumber*secondNumber
                 sonucLabel.text = String(sonuc)
             }
-            else
-            {sonucLabel.text = "Lütfen bir sayı giriniz"}
+            else{
+                sonucLabel.text = "Lütfen bir sayı giriniz"}
         }
-        else
-        {
+        else{
             sonucLabel.text = "Lütfen bir sayı giriniz"
-            
         }
     }
     
     @IBAction func bolmeButton(_ sender: Any)
     {
-        if let firstNumber = Int(birinciSayiText.text!)
-        {
+        if let firstNumber = Int(birinciSayiText.text!){
             
-            if let secondNumber = Int(ikinciSayi.text!)
-            {
+            if let secondNumber = Int(ikinciSayi.text!){
                 sonuc = firstNumber/secondNumber
                 sonucLabel.text = String(sonuc)
             }
-            else
-            {sonucLabel.text = "Lütfen bir sayı giriniz"}
+            else{sonucLabel.text = "Lütfen bir sayı giriniz"}
         }
-        else
-        {
+        else{
             sonucLabel.text = "Lütfen bir sayı giriniz"
             
         }

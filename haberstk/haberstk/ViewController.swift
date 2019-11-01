@@ -41,7 +41,7 @@ class ViewController: UIViewController, WKUIDelegate, UIWebViewDelegate,WKNaviga
         webView.uiDelegate = self
         
         
-        let myURL = URL(string: "https://www.haberstk.com")
+        let myURL = URL(string: "https://www.haberturk.com/")
         let myRequest = URLRequest(url: myURL!)
         webView.allowsBackForwardNavigationGestures = true
         webView.load(myRequest)
