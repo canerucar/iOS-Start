@@ -160,4 +160,16 @@ var d = dikdort(g: 5, u: 10)
 
 print("Dikdörtgen Genişliği: \(d.genislik)")
 
+func beerSong(withThisManyBottles : Int) -> String{
+    var lyrics: String = ""
+    //reversed = büyük sayıdan başlar
+    for number in (1...withThisManyBottles).reversed() {
+        let newLine: String = "\n\(number) bottles of beer on the wall, \(number) bottles of beer. \nTake one down and pass it around, \(number - 1) bottles of beer on the wall.\n"
+        lyrics += newLine
+    }
+    lyrics += "\nNo more bottles of beer on the wall, no more bottles of beer. \nGo to the sore and but sıme more, 99 bottles of beer on the wall.\n"
+    return lyrics
+}
+print(beerSong(withThisManyBottles: 15))
+
 
