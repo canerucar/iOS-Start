@@ -1,0 +1,16 @@
+PODS:
+  - CHIPageControl/Fresno (0.2)
+
+DEPENDENCIES:
+  - CHIPageControl/Fresno
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CHIPageControl
+
+SPEC CHECKSUMS:
+  CHIPageControl: a787bf7205c9b7e7fbfc412be36c5e8636b68f86
+
+PODFILE CHECKSUM: 32910abfac81367f24e4bad60318e159679aef39
+
+COCOAPODS: 1.7.5
