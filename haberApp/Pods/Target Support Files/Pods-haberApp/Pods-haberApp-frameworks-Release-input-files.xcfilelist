@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-haberApp/Pods-haberApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework

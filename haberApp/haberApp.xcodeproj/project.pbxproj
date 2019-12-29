@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C0F7C5E232E8FC400EE5ED3 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F7C5D232E8FC400EE5ED3 /* NewsTableViewCell.swift */; };
+		9C0F7C60232E989500EE5ED3 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0F7C5F232E989500EE5ED3 /* NewsDetailViewController.swift */; };
+		9C69BD73232E80BB007BFAEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69BD72232E80BB007BFAEF /* AppDelegate.swift */; };
+		9C69BD75232E80BB007BFAEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C69BD74232E80BB007BFAEF /* ViewController.swift */; };
+		9C69BD78232E80BB007BFAEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C69BD76232E80BB007BFAEF /* Main.storyboard */; };
+		9C69BD7A232E80BC007BFAEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C69BD79232E80BC007BFAEF /* Assets.xcassets */; };
+		9C69BD7D232E80BC007BFAEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C69BD7B232E80BC007BFAEF /* LaunchScreen.storyboard */; };
+		A5009A06AE362AD190B0FC92 /* Pods_haberApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF9AF780F8D9AFA306D4751E /* Pods_haberApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4ED26CA12D1E0954746617BC /* Pods-haberApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haberApp.debug.xcconfig"; path = "Target Support Files/Pods-haberApp/Pods-haberApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9C0F7C5D232E8FC400EE5ED3 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		9C0F7C5F232E989500EE5ED3 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		9C69BD6F232E80BB007BFAEF /* haberApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haberApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C69BD72232E80BB007BFAEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C69BD74232E80BB007BFAEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C69BD77232E80BB007BFAEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C69BD79232E80BC007BFAEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C69BD7C232E80BC007BFAEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C69BD7E232E80BC007BFAEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF9AF780F8D9AFA306D4751E /* Pods_haberApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_haberApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA87B7B678E59BD05B371F04 /* Pods-haberApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-haberApp.release.xcconfig"; path = "Target Support Files/Pods-haberApp/Pods-haberApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C69BD6C232E80BB007BFAEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5009A06AE362AD190B0FC92 /* Pods_haberApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		139F2BF086A421E79DA71140 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ED26CA12D1E0954746617BC /* Pods-haberApp.debug.xcconfig */,
+				FA87B7B678E59BD05B371F04 /* Pods-haberApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		886C2952193E98A1B5EFDDCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF9AF780F8D9AFA306D4751E /* Pods_haberApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C03D64A23B8D4B500611E62 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C69BD74232E80BB007BFAEF /* ViewController.swift */,
+				9C0F7C5F232E989500EE5ED3 /* NewsDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9C03D64B23B8DB8500611E62 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9C0F7C5D232E8FC400EE5ED3 /* NewsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9C03D64C23B8DB9700611E62 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9C69BD76232E80BB007BFAEF /* Main.storyboard */,
+				9C69BD7B232E80BC007BFAEF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9C69BD66232E80BA007BFAEF = {
+			isa = PBXGroup;
+			children = (
+				9C69BD71232E80BB007BFAEF /* haberApp */,
+				9C69BD70232E80BB007BFAEF /* Products */,
+				139F2BF086A421E79DA71140 /* Pods */,
+				886C2952193E98A1B5EFDDCE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9C69BD70232E80BB007BFAEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C69BD6F232E80BB007BFAEF /* haberApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C69BD71232E80BB007BFAEF /* haberApp */ = {
+			isa = PBXGroup;
+			children = (
+				9C03D64C23B8DB9700611E62 /* Storyboards */,
+				9C03D64A23B8D4B500611E62 /* Controller */,
+				9C03D64B23B8DB8500611E62 /* Cell */,
+				9C69BD72232E80BB007BFAEF /* AppDelegate.swift */,
+				9C69BD79232E80BC007BFAEF /* Assets.xcassets */,
+				9C69BD7E232E80BC007BFAEF /* Info.plist */,
+			);
+			path = haberApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C69BD6E232E80BB007BFAEF /* haberApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C69BD81232E80BC007BFAEF /* Build configuration list for PBXNativeTarget "haberApp" */;
+			buildPhases = (
+				C6C95D91E3AB032F84D305EB /* [CP] Check Pods Manifest.lock */,
+				9C69BD6B232E80BB007BFAEF /* Sources */,
+				9C69BD6C232E80BB007BFAEF /* Frameworks */,
+				9C69BD6D232E80BB007BFAEF /* Resources */,
+				59B5CA35F302773E85D1B2FA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = haberApp;
+			productName = haberApp;
+			productReference = 9C69BD6F232E80BB007BFAEF /* haberApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C69BD67232E80BA007BFAEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Caner Uçar";
+				TargetAttributes = {
+					9C69BD6E232E80BB007BFAEF = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 9C69BD6A232E80BA007BFAEF /* Build configuration list for PBXProject "haberApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C69BD66232E80BA007BFAEF;
+			productRefGroup = 9C69BD70232E80BB007BFAEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C69BD6E232E80BB007BFAEF /* haberApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C69BD6D232E80BB007BFAEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C69BD7D232E80BC007BFAEF /* LaunchScreen.storyboard in Resources */,
+				9C69BD7A232E80BC007BFAEF /* Assets.xcassets in Resources */,
+				9C69BD78232E80BB007BFAEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59B5CA35F302773E85D1B2FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-haberApp/Pods-haberApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-haberApp/Pods-haberApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-haberApp/Pods-haberApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C95D91E3AB032F84D305EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-haberApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C69BD6B232E80BB007BFAEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0F7C60232E989500EE5ED3 /* NewsDetailViewController.swift in Sources */,
+				9C69BD75232E80BB007BFAEF /* ViewController.swift in Sources */,
+				9C69BD73232E80BB007BFAEF /* AppDelegate.swift in Sources */,
+				9C0F7C5E232E8FC400EE5ED3 /* NewsTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C69BD76232E80BB007BFAEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C69BD77232E80BB007BFAEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C69BD7B232E80BC007BFAEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C69BD7C232E80BC007BFAEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C69BD7F232E80BC007BFAEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C69BD80232E80BC007BFAEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C69BD82232E80BC007BFAEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ED26CA12D1E0954746617BC /* Pods-haberApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DLL23T4GCG;
+				INFOPLIST_FILE = haberApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.canerucar.haberApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9C69BD83232E80BC007BFAEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA87B7B678E59BD05B371F04 /* Pods-haberApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DLL23T4GCG;
+				INFOPLIST_FILE = haberApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.canerucar.haberApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C69BD6A232E80BA007BFAEF /* Build configuration list for PBXProject "haberApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C69BD7F232E80BC007BFAEF /* Debug */,
+				9C69BD80232E80BC007BFAEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C69BD81232E80BC007BFAEF /* Build configuration list for PBXNativeTarget "haberApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C69BD82232E80BC007BFAEF /* Debug */,
+				9C69BD83232E80BC007BFAEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C69BD67232E80BA007BFAEF /* Project object */;
+}
