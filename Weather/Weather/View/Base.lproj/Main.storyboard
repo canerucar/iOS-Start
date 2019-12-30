@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="WqA-Xf-UqQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcatraz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOL-4S-N3h">
+                                <rect key="frame" x="16" y="94" width="343" height="30"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhB-lp-Bjm">
+                                <rect key="frame" x="16" y="136" width="343" height="98"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="83"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAHRENHEIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brH-0n-sc2">
+                                <rect key="frame" x="16" y="253" width="343" height="16"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="brH-0n-sc2" firstAttribute="top" secondItem="xhB-lp-Bjm" secondAttribute="bottom" constant="19" id="4Sk-Dk-YP1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xhB-lp-Bjm" secondAttribute="trailing" constant="16" id="8hJ-Sz-a6k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pOL-4S-N3h" secondAttribute="trailing" constant="16" id="9Ip-tV-b9k"/>
+                            <constraint firstItem="WqA-Xf-UqQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LCZ-RI-Hj9"/>
+                            <constraint firstAttribute="trailing" secondItem="WqA-Xf-UqQ" secondAttribute="trailing" id="LmF-9z-odM"/>
+                            <constraint firstItem="pOL-4S-N3h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="QZq-1c-SPU"/>
+                            <constraint firstItem="WqA-Xf-UqQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VVn-Ga-deV"/>
+                            <constraint firstAttribute="bottom" secondItem="WqA-Xf-UqQ" secondAttribute="bottom" id="d0D-IX-NDw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="brH-0n-sc2" secondAttribute="trailing" constant="16" id="gcR-53-SFW"/>
+                            <constraint firstItem="brH-0n-sc2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kUw-hi-p8I"/>
+                            <constraint firstItem="pOL-4S-N3h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kcB-yv-6Jz"/>
+                            <constraint firstItem="xhB-lp-Bjm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yGr-Hh-Dgk"/>
+                            <constraint firstItem="xhB-lp-Bjm" firstAttribute="top" secondItem="pOL-4S-N3h" secondAttribute="bottom" constant="12" id="z50-W1-s0Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="WqA-Xf-UqQ" id="jvU-yd-fSS"/>
+                        <outlet property="cityTextlabel" destination="pOL-4S-N3h" id="X3v-fx-SkD"/>
+                        <outlet property="temperatureLabel" destination="xhB-lp-Bjm" id="WhE-A1-bEX"/>
+                        <outlet property="temperatureScaleLabel" destination="brH-0n-sc2" id="veH-3I-hwr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="564" height="1003"/>
+    </resources>
+</document>
